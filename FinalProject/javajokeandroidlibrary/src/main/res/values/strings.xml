@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">JavaJokeAndroidLibrary</string>
+    <string name="empty_joke">No joke was passed.</string>
+</resources>
