@@ -1,1 +1,1 @@
-include ':app', ':javajokelibrary', ':javajokeandroidlibrary'
+include ':app', ':javajokelibrary', ':javajokeandroidlibrary', ':backend'
