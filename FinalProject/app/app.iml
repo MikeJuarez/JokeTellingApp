@@ -113,7 +113,6 @@
       <sourceFolder url="file://$MODULE_DIR$/src/androidTest/shaders" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/assets" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/blame" />
-      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/builds" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/classes" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/incremental" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/incremental-classes" />
@@ -181,10 +180,6 @@
     <orderEntry type="module" module-name="javajokeandroidlibrary" exported="" />
     <orderEntry type="library" exported="" name="android-android-25" level="project" />
     <orderEntry type="library" exported="" name="constraint-layout-solver-1.0.2" level="project" />
-    <orderEntry type="module" module-name="javajokelibrary" exported="" />
-    <orderEntry type="module" module-name="javajokeandroidlibrary" exported="" />
-    <orderEntry type="module" module-name="javajokelibrary" exported="" />
-    <orderEntry type="module" module-name="javajokeandroidlibrary" exported="" />
     <orderEntry type="module" module-name="javajokelibrary" exported="" />
     <orderEntry type="module" module-name="javajokeandroidlibrary" exported="" />
   </component>
