@@ -46,6 +46,7 @@ public class MyEndpoint {
         String theJoke = joker.getJoke();
         MyBean response = new MyBean();
         response.setData(theJoke);
+
         return response;
     }
 }

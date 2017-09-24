@@ -18,19 +18,38 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-}
 
+    productFlavors {
+        free {
+            applicationIdSuffix ".free"
+            applicationId = "com.udacity.builditbigger.free"
+        }
+        paid {
+            applicationIdSuffix ".paid"
+            applicationId = "com.udacity.builditbigger.paid"
+        }
+    }
+}
+configurations.all() {
+    exclude group: "org.apache.httpcomponents", module: "httpclient"
+}
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
-        exclude group: 'com.android.support', module: 'support-annotations'
-    })
-    compile 'com.android.support:appcompat-v7:25.2.0'
+    compile 'com.android.support:support-annotations:25.3.1'
+    compile 'com.android.support:appcompat-v7:25.3.1'
     compile 'com.google.android.gms:play-services-ads:11.0.4'
     compile project(":javajokelibrary")
     compile project(":javajokeandroidlibrary")
     compile group: 'com.google.api-client', name: 'google-api-client', version: '1.22.0'
     compile group: 'com.google.api-client', name: 'google-api-client-android', version: '1.22.0'
 
+    //Testing-only dependencies
+    testCompile 'junit:junit:4.12'
+    androidTestCompile 'com.android.support.test.espresso:espresso-core:2.2.2'
+    androidTestCompile 'com.android.support:support-annotations:25.3.1'
+
 
 }
+
+
+
