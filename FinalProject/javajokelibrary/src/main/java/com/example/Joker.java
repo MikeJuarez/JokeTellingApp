@@ -7,7 +7,7 @@ public class Joker {
     public String getJoke() {
         ArrayList<String> jokeList = new ArrayList<>();
         jokeList.add("What do you call a fake noodle??<p> <b>An Im-pasta!</b>");
-        jokeList.add("Why can't your nose be 12 inches long??<p> <b>An Im-pasta!</b>");
+        jokeList.add("Why can't your nose be 12 inches long??<p> <b>Because it would be a foot.</b>");
         jokeList.add("What do you call a mile of cats??<p> <b> meowtain!</b>");
         jokeList.add("Why did the yogurt go to the museum?<p> <b>Because it was cultured!</b>");
         jokeList.add("What's a pepper that won't leave you alone?<p> <b>Jalapeno business!</b>");
