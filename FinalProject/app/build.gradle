@@ -47,9 +47,21 @@ dependencies {
     testCompile 'junit:junit:4.12'
     androidTestCompile 'com.android.support.test.espresso:espresso-core:2.2.2'
     androidTestCompile 'com.android.support:support-annotations:25.3.1'
-
-
 }
+
+task testForNonEmptyStringsText {
+    project(":backend").afterEvaluate { backend ->
+        backend.extensions.appengine.daemon = true
+    }
+
+    mustRunAfter ':backend:appengineRun'
+    dependsOn = [':backend:appengineRun', ':app:connectedAndroidTest']
+    finalizedBy ':backend:appengineStop'
+}
+
+
+
+
 
 
 
