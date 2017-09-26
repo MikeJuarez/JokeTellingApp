@@ -25,9 +25,9 @@ Say what the step will be
 
 ### Screenshots
 
-[!(https://github.com/MikeJuarez/JokeTellingApp/blob/master/_screenshots/1main_screen.png)]
-[!(https://github.com/MikeJuarez/JokeTellingApp/blob/master/_screenshots/2interstitial_ad_screenshot.png)]
-[!(https://github.com/MikeJuarez/JokeTellingApp/blob/master/_screenshots/3the_joke.png)]
+[!(https://raw.githubusercontent.com/MikeJuarez/JokeTellingApp/master/_screenshots/1main_screen.png)]
+[!(https://raw.githubusercontent.com/MikeJuarez/JokeTellingApp/master/_screenshots/2interstitial_ad_screenshot.png)]
+[!(https://raw.githubusercontent.com/MikeJuarez/JokeTellingApp/master/_screenshots/3the_joke.png)]
 
 ## Deployment
 
