@@ -7,6 +7,7 @@ import android.os.AsyncTask;
 import android.support.v4.util.Pair;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.Html;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -41,13 +42,11 @@ public class AndroidJoker extends AppCompatActivity {
         if (theJoke != null && theJoke.length() != 0) {
             mAndroidJokeTextView.setVisibility(View.VISIBLE);
             mErrorImageView.setVisibility(View.GONE);
-            mAndroidJokeTextView.setText(theJoke);
+            mAndroidJokeTextView.setText(Html.fromHtml(theJoke));
         }
         else {
             mAndroidJokeTextView.setVisibility(View.GONE);
             mErrorImageView.setVisibility(View.VISIBLE);
         }
-
-
     }
 }

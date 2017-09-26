@@ -2,7 +2,26 @@
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:background">@color/primaryText</item>
+        <item name="android:textColor">@color/backgroundPrimary</item>
         <!-- Customize your theme here. -->
+    </style>
+
+    <style name="MainAppTheme">
+        <item name="android:background">@color/backgroundPrimary</item>
+    </style>
+
+    <style name="TextTheme">
+        <item name="android:background">@color/backgroundPrimary</item>
+        <item name="android:textColor">@color/primaryText</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="ButtonsTheme">
+        <item name="android:textSize">25sp</item>
+        <item name="android:background">@color/primaryText</item>
+        <item name="android:textColor">@color/backgroundPrimary</item>
+        <item name="android:textStyle">bold</item>
     </style>
 
 </resources>
