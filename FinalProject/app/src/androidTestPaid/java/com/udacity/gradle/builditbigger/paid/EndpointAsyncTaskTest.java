@@ -2,6 +2,7 @@ package com.udacity.gradle.builditbigger.paid;
 
 import android.support.test.rule.ActivityTestRule;
 
+import com.udacity.gradle.builditbigger.EndpointAsyncTask;
 import com.udacity.gradle.builditbigger.MainActivity;
 
 import org.junit.Assert;

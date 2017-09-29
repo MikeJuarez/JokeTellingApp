@@ -1,32 +1,9 @@
 package com.udacity.gradle.builditbigger;
 
-import android.content.Context;
-import android.content.Intent;
-import android.os.AsyncTask;
 import android.os.Bundle;
-import android.support.v4.util.Pair;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
-import android.widget.Toast;
-
-import com.example.Joker;
-import com.example.user.myapplication.backend.myApi.MyApi;
-import com.google.android.gms.ads.InterstitialAd;
-import com.google.api.client.extensions.android.http.AndroidHttp;
-import com.google.api.client.extensions.android.json.AndroidJsonFactory;
-import com.google.api.client.googleapis.services.AbstractGoogleClientRequest;
-import com.google.api.client.googleapis.services.GoogleClientRequestInitializer;
-import com.udacity.gradle.builditbigger.R;
-
-import java.io.IOException;
-
-import michael_juarez.javajokeandroidlibrary.AndroidJoker;
-
-import static java.security.AccessController.getContext;
-import static michael_juarez.javajokeandroidlibrary.AndroidJoker.KEY_ANDROID_JOKE;
 
 
 public class MainActivity extends AppCompatActivity {

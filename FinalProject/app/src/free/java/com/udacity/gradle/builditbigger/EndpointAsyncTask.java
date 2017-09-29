@@ -1,5 +1,4 @@
-package com.udacity.gradle.builditbigger.free;
-
+package com.udacity.gradle.builditbigger;
 import android.content.Context;
 import android.content.Intent;
 import android.os.AsyncTask;
@@ -15,12 +14,7 @@ import com.google.api.client.googleapis.services.GoogleClientRequestInitializer;
 import java.io.IOException;
 
 import michael_juarez.javajokeandroidlibrary.AndroidJoker;
-
 import static michael_juarez.javajokeandroidlibrary.AndroidJoker.KEY_ANDROID_JOKE;
-
-/**
- * Created by user on 9/25/2017.
- */
 
 public class EndpointAsyncTask extends AsyncTask<Context, Void, String> {
     private MyApi myApiService = null;
@@ -52,8 +46,9 @@ public class EndpointAsyncTask extends AsyncTask<Context, Void, String> {
                     // options for running against local devappserver
                     // - 10.0.2.2 is localhost's IP address in Android emulator
                     // - turn off compression when running against local devappserver
+
+                    //.setRootUrl("10.0.2.2") Not using an emulator (computer doesn't support it)
                     .setRootUrl("http://192.168.1.92:8080/_ah/api/")
-                    //.setRootUrl("10.0.2.2")
                     .setGoogleClientRequestInitializer(new GoogleClientRequestInitializer() {
                         @Override
                         public void initialize(AbstractGoogleClientRequest<?> abstractGoogleClientRequest) throws IOException {

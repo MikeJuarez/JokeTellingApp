@@ -1,4 +1,4 @@
-package com.udacity.gradle.builditbigger.paid;
+package com.udacity.gradle.builditbigger;
 
 import android.content.Context;
 import android.content.Intent;
@@ -48,8 +48,8 @@ public class EndpointAsyncTask extends AsyncTask<Context, Void, String> {
                     // options for running against local devappserver
                     // - 10.0.2.2 is localhost's IP address in Android emulator
                     // - turn off compression when running against local devappserver
+                    //.setRootUrl("10.0.2.2") // Not using emulator
                     .setRootUrl("http://192.168.1.92:8080/_ah/api/")
-                    //.setRootUrl("10.0.2.2")
                     .setGoogleClientRequestInitializer(new GoogleClientRequestInitializer() {
                         @Override
                         public void initialize(AbstractGoogleClientRequest<?> abstractGoogleClientRequest) throws IOException {

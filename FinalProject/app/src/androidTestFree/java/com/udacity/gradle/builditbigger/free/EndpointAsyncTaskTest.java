@@ -3,6 +3,7 @@ package com.udacity.gradle.builditbigger.free;
 import android.support.test.rule.ActivityTestRule;
 
 import com.google.android.gms.ads.InterstitialAd;
+import com.udacity.gradle.builditbigger.EndpointAsyncTask;
 import com.udacity.gradle.builditbigger.MainActivity;
 
 import org.junit.Assert;

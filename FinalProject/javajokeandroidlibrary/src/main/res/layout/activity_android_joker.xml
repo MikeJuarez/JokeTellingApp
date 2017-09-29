@@ -15,7 +15,9 @@
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:gravity="center"
-        android:visibility="visible"/>
+        android:visibility="visible"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"/>
 
     <ImageView
         android:id="@+id/android_joker_error"

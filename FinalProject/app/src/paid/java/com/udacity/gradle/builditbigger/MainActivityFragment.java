@@ -1,7 +1,5 @@
-package com.udacity.gradle.builditbigger.paid;
+package com.udacity.gradle.builditbigger;
 
-import android.content.Context;
-import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -11,20 +9,6 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.TextView;
-
-import com.example.user.myapplication.backend.myApi.MyApi;
-import com.google.api.client.extensions.android.http.AndroidHttp;
-import com.google.api.client.extensions.android.json.AndroidJsonFactory;
-import com.google.api.client.googleapis.services.AbstractGoogleClientRequest;
-import com.google.api.client.googleapis.services.GoogleClientRequestInitializer;
-import com.udacity.gradle.builditbigger.R;
-import com.udacity.gradle.builditbigger.paid.EndpointAsyncTask;
-
-import java.io.IOException;
-
-import michael_juarez.javajokeandroidlibrary.AndroidJoker;
-
-import static michael_juarez.javajokeandroidlibrary.AndroidJoker.KEY_ANDROID_JOKE;
 
 
 /**
@@ -84,7 +68,8 @@ public class MainActivityFragment extends Fragment implements EndpointAsyncTask.
 
     @Override
     public void onPause() {
-        mEndpointAsyncTask.cancel(true);
+        if (mEndpointAsyncTask != null)
+            mEndpointAsyncTask.cancel(true);
         super.onPause();
     }
 }

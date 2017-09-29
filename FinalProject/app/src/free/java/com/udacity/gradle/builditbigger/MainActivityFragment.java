@@ -1,11 +1,8 @@
-package com.udacity.gradle.builditbigger.free;
+package com.udacity.gradle.builditbigger;
 
-import android.content.Context;
-import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,22 +10,9 @@ import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-import com.example.user.myapplication.backend.myApi.MyApi;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.InterstitialAd;
-import com.google.api.client.extensions.android.http.AndroidHttp;
-import com.google.api.client.extensions.android.json.AndroidJsonFactory;
-import com.google.api.client.googleapis.services.AbstractGoogleClientRequest;
-import com.google.api.client.googleapis.services.GoogleClientRequestInitializer;
-import com.udacity.gradle.builditbigger.R;
-
-import java.io.IOException;
-
-import michael_juarez.javajokeandroidlibrary.AndroidJoker;
-
-import static michael_juarez.javajokeandroidlibrary.AndroidJoker.KEY_ANDROID_JOKE;
-
 
 /**
  * A placeholder fragment containing a simple view.
@@ -122,7 +106,8 @@ public class MainActivityFragment extends Fragment implements EndpointAsyncTask.
 
     @Override
     public void onPause() {
-        mEndpointAsyncTask.cancel(true);
+        if (mEndpointAsyncTask != null)
+            mEndpointAsyncTask.cancel(true);
         super.onPause();
     }
 }

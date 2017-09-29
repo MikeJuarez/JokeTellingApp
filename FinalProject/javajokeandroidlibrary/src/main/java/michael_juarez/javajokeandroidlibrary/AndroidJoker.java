@@ -37,7 +37,8 @@ public class AndroidJoker extends AppCompatActivity {
         mAndroidJokeTextView = (TextView) findViewById(R.id.android_joker_tv);
         mErrorImageView = (ImageView) findViewById(R.id.android_joker_error);
 
-        theJoke = getIntent().getStringExtra(KEY_ANDROID_JOKE);
+        if (getIntent().hasExtra(KEY_ANDROID_JOKE))
+            theJoke = getIntent().getStringExtra(KEY_ANDROID_JOKE);
 
         if (theJoke != null && theJoke.length() != 0) {
             mAndroidJokeTextView.setVisibility(View.VISIBLE);
