@@ -5,7 +5,7 @@ In this project, I will create an app with multiple flavors that uses multiple l
 <b><p> 
 Here were the tasks that needed to be completed:
 </p></b>
-<b>Step 0: Starting Point <br?</b>
+<b>Step 0: Starting Point </b>
 This is the starting point for the final project, which is provided to you in the course repository.</p>
 
 It contains an activity with a banner ad and a button that purports to tell a joke, but actually just complains. The banner ad was set up following the instructions here.</p>
