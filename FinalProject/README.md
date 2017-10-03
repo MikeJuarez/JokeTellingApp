@@ -1,10 +1,11 @@
 # Joke Telling Android App (Nanodegree Project #4)
 
 In this project, I will create an app with multiple flavors that uses multiple libraries and Google Cloud Endpoints. The finished app will consist of four modules. A Java library that provides jokes, a Google Cloud Endpoints (GCE) project that serves those jokes, an Android Library containing an activity for displaying jokes, and an Android app that fetches jokes from the GCE module and passes them to the Android Library for display.
-<p> 
-<b>Here were the tasks that needed to be completed: </b>
-</p>
-<b>Step 0: Starting Point <br?</b>
+
+<b><p> 
+Here were the tasks that needed to be completed:
+</p></b>
+<b>Step 0: Starting Point </b>
 This is the starting point for the final project, which is provided to you in the course repository.</p>
 
 It contains an activity with a banner ad and a button that purports to tell a joke, but actually just complains. The banner ad was set up following the instructions here.</p>
