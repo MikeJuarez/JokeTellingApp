@@ -13,43 +13,43 @@ You may need to download the Google Repository from the Extras section of the An
 
 When you can build an deploy this starter code to an emulator, you're ready to move on.</p>
 
-Step 1: Create a Java library<br>
+<b>Step 1: Create a Java library<br></b>
 Your first task is to create a Java library that provides jokes. Create a new Gradle Java project either using the Android Studio wizard, or by hand. Then introduce a project dependency between your app and the new Java Library. If you need review, check out demo 4.01 from the course code.</p>
 
 Make the button display a toast showing a joke retrieved from your Java joke telling library.</p>
 
-Step 2: Create an Android Library<br>
+<b>Step 2: Create an Android Library<br></b>
 Create an Android Library containing an Activity that will display a joke passed to it as an intent extra. Wire up project dependencies so that the button can now pass the joke from the Java Library to the Android Library.</p>
 
 For review on how to create an Android library, check out demo 4.03. For a refresher on intent extras, check out this documentation.</p>
 
-Step 3: Create GCE Module<br>
+<b>Step 3: Create GCE Module<br></b>
 This next task will be pretty tricky. Instead of pulling jokes directly from our Java library, we'll set up a GCE development server, and pull our jokes from there. Follow the instructions in this tutorial to add a GCE module to your project:</p>
 
 Introduce a project dependency between your Java library and your GCE module, and modify the GCE starter code to pull jokes from your Java library. Create an Async task to retrieve jokes. Make the button kick off a task to retrieve a joke, then launch the activity from your Android Library to display it.</p>
 
-Step 4: Add Functional Tests</br>
+<b>Step 4: Add Functional Tests</br></b>
 Add code to test that your Async task successfully retrieves a non-empty string. For a refresher on setting up Android tests, check out demo 4.09.</p>
 
-Step 5: Add a Paid Flavor</br>
+<b>Step 5: Add a Paid Flavor</br></b>
 Add free and paid product flavors to your app. Remove the ad (and any dependencies you can) from the paid flavor. IMPORTANT: You do not need Google AdMob in the Manifest of the paid version of the app. Make sure to include this only with the free/ manifest. Also make sure to add Google Play Services only to the free version of the app in Gradle.</p>
 
-Optional Tasks</br>
+<b>Optional Tasks</br></b>
 For extra practice to make your project stand out, complete the following tasks.</p>
 
-Add Interstitial Ad</br>
+<b>Add Interstitial Ad</br></b>
 Follow these instructions to add an interstitial ad to the free version. Display the ad after the user hits the button, and before the joke is shown.</p>
 
-Add Loading Indicator</br>
+<b>Add Loading Indicator</br></b>
 Add a loading indicator that is shown while the joke is being retrieved, and disappears when the joke is ready. This tutorial is a good place to start.</p>
 
-Configure Test Task</br>
+<b>Configure Test Task</br></b>
 To tie it all together, create a Gradle task that:</p>
 
-Launches the GCE local development server (in Daemon mode, so it doesn't block further execution)</br>
+<b>Launches the GCE local development server (in Daemon mode, so it doesn't block further execution)</br></b>
 Runs all tests</br>
 Shuts the server down again</br>
-NEXT</p>
+</p>
 
 ## Getting Started
 
