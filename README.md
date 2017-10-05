@@ -59,10 +59,10 @@ Shuts the server down again</br>
 
 ### Screenshots
 
-[![Joke Telling App](https://img.youtube.com/vi/oTv7BCaDUAE/0.jpg)](https://www.youtube.com/embed/oTv7BCaDUAE)
-<img src="https://raw.githubusercontent.com/MikeJuarez/JokeTellingApp/master/_screenshots/1main_screen.png" width="250" />
-<img src="https://raw.githubusercontent.com/MikeJuarez/JokeTellingApp/master/_screenshots/2interstitial_ad_screenshot.png" width="250"/>
-<img src="https://raw.githubusercontent.com/MikeJuarez/JokeTellingApp/master/_screenshots/3the_joke.png" width="250"/>
+[![Joke Telling App](https://img.youtube.com/vi/oTv7BCaDUAE/0.jpg)](https://www.youtube.com/embed/oTv7BCaDUAE)</br>
+<img src="https://raw.githubusercontent.com/MikeJuarez/JokeTellingApp/master/_screenshots/1main_screen.png" width="250" /></br>
+<img src="https://raw.githubusercontent.com/MikeJuarez/JokeTellingApp/master/_screenshots/2interstitial_ad_screenshot.png" width="250"/></br>
+<img src="https://raw.githubusercontent.com/MikeJuarez/JokeTellingApp/master/_screenshots/3the_joke.png" width="250"/></br>
 
 ## Built With
 
